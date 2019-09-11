@@ -1,4 +1,4 @@
-#English-Hindi-Digital-Document-Translater
+# English-Hindi-Digital-Document-Translater
 This repository contains the code to convert English Digital Documents(pdf) into Hindi. 
 
 Below are the two components present :
