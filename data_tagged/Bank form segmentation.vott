@@ -1,0 +1,679 @@
+{
+    "name": "Bank form segmentation",
+    "securityToken": "Bank form segmentation Token",
+    "sourceConnection": {
+        "name": "input image",
+        "description": "input images folder",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiY2JkOWJiZDk1MDAwNTYwMjY0OTMzODk1NjcxMDM2YjA3ZmZjNzVlMWFkZjY2ZmY3ZmI4NTMyNTA5MjZjMTU3YzhmNjJjNDEyMzJhYzE2YWU3YTUxYjA5ZTcwMGVlZmVmOTdmOTZkZTY3MzBiZGJjYjg0OTMyYTRlNjMzMmM5MTgiLCJpdiI6IjRjMjg1YTM0YjJhMWM4MzdiMjcyZmFmMDMxMjQ5NWExMzcyZTRlYTU1OTQwNjIxNSJ9"
+        },
+        "id": "3jc5X04fI"
+    },
+    "targetConnection": {
+        "name": "tagged_output",
+        "description": "Output of tagged data",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDVlMWU4M2U5YzQ4OTc5OWUzYjkyMzYzZDZmOTRhZjM0YTMwNjkyOGE1NzVlYWQ5NGIwMzk2YWU4ODI3ODU4ZGI1NTgyZjY4Y2QzYmU1ZjI1Y2IxNTRlMGNjYTBjZGU2N2ZjZjEwYTQ0YzNlYmU4OGU0MzZmOTk5ODI5Mjk4OTEiLCJpdiI6ImEwM2RhNjU5MmY4ZGIwZDFjYjFiNjA3MjcwYjViZGU4Y2I1ZmM0NDI1MzcwYTU4NCJ9"
+        },
+        "id": "aCvhtvJjk"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "box1",
+            "color": "#5db300"
+        },
+        {
+            "name": "box2",
+            "color": "#e81123"
+        },
+        {
+            "name": "Box3",
+            "color": "#6917aa"
+        },
+        {
+            "name": "Box4",
+            "color": "#015cda"
+        },
+        {
+            "name": "Box5",
+            "color": "#4894fe"
+        },
+        {
+            "name": "Box6",
+            "color": "#6b849c"
+        }
+    ],
+    "id": "F8_AlnzyJ",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "csv",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNGE3MjI2OGI0ZWY3ZDlhYjdhNzQ1Njk5ZTIyNjc1OGYzYzQ1YjJhMWEwYjA5MmI0MGQxZWE3NWQxYmQ4YzVkZjNiNTBjMzM2ZjJlMTk5YzBkM2NlNjQyMzIyZmZjZjc5IiwiaXYiOiI1YTk2ZjliZjRlMThhNTE1YWM2ZjMyZmEyY2MzMzUyNmIzODM1OGM0Yjk4OGQ0NTUifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "ee0556c8dee4edd819a89f9ccc77cb87",
+    "assets": {
+        "86663f1fe91e6a2b5dd3016d2b1e1f96": {
+            "format": "jpg",
+            "id": "86663f1fe91e6a2b5dd3016d2b1e1f96",
+            "name": "1.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/1.jpg",
+            "size": {
+                "width": 1832,
+                "height": 2720
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4f6bf2cd205e8edaf884720bcf6b160a": {
+            "format": "jpg",
+            "id": "4f6bf2cd205e8edaf884720bcf6b160a",
+            "name": "10.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/10.jpg",
+            "size": {
+                "width": 2088,
+                "height": 3048
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ee0556c8dee4edd819a89f9ccc77cb87": {
+            "format": "jpg",
+            "id": "ee0556c8dee4edd819a89f9ccc77cb87",
+            "name": "11.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/11.jpg",
+            "size": {
+                "width": 2120,
+                "height": 3000
+            },
+            "state": 2,
+            "type": 1
+        },
+        "880aa1d3d2fa953226225cd558de5896": {
+            "format": "jpg",
+            "id": "880aa1d3d2fa953226225cd558de5896",
+            "name": "19.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/19.jpg",
+            "size": {
+                "width": 2056,
+                "height": 2920
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16b14860105b75ab75aff8fa5e6e6219": {
+            "format": "jpg",
+            "id": "16b14860105b75ab75aff8fa5e6e6219",
+            "name": "3.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/3.jpg",
+            "size": {
+                "width": 1792,
+                "height": 2592
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8e9269eb288a67753b04089523ad2e8a": {
+            "format": "jpg",
+            "id": "8e9269eb288a67753b04089523ad2e8a",
+            "name": "38.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/38.jpg",
+            "size": {
+                "width": 2156,
+                "height": 3056
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ad780c71c84af5ac48c5950c8f2b0813": {
+            "format": "jpg",
+            "id": "ad780c71c84af5ac48c5950c8f2b0813",
+            "name": "12.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/12.jpg",
+            "size": {
+                "width": 1972,
+                "height": 2796
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d6616b7e02f7d6967070d6e135277c4d": {
+            "format": "jpg",
+            "id": "d6616b7e02f7d6967070d6e135277c4d",
+            "name": "13.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/13.jpg",
+            "size": {
+                "width": 1960,
+                "height": 2788
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cc084a72e50685b1eed29c07323e68a1": {
+            "format": "jpg",
+            "id": "cc084a72e50685b1eed29c07323e68a1",
+            "name": "14.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/14.jpg",
+            "size": {
+                "width": 2076,
+                "height": 2980
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b61051edb4cb1a9c792ce4c12c06d778": {
+            "format": "jpg",
+            "id": "b61051edb4cb1a9c792ce4c12c06d778",
+            "name": "15.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/15.jpg",
+            "size": {
+                "width": 2120,
+                "height": 3056
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f7acbaabf14f113974af7251fcefc325": {
+            "format": "jpg",
+            "id": "f7acbaabf14f113974af7251fcefc325",
+            "name": "16.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/16.jpg",
+            "size": {
+                "width": 2060,
+                "height": 2960
+            },
+            "state": 2,
+            "type": 1
+        },
+        "09ee5dca795be0f8571954a3d7a60f41": {
+            "format": "jpg",
+            "id": "09ee5dca795be0f8571954a3d7a60f41",
+            "name": "17.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/17.jpg",
+            "size": {
+                "width": 2140,
+                "height": 3116
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fadb1aaa82677a7238bac3c75acd9c01": {
+            "format": "jpg",
+            "id": "fadb1aaa82677a7238bac3c75acd9c01",
+            "name": "18.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/18.jpg",
+            "size": {
+                "width": 2108,
+                "height": 3032
+            },
+            "state": 2,
+            "type": 1
+        },
+        "561007f87d5f1c66a7dfd6729ffd0293": {
+            "format": "jpg",
+            "id": "561007f87d5f1c66a7dfd6729ffd0293",
+            "name": "2.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/2.jpg",
+            "size": {
+                "width": 1768,
+                "height": 2528
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5d5e98e244e013d3e580a6562a2ea8a5": {
+            "format": "jpg",
+            "id": "5d5e98e244e013d3e580a6562a2ea8a5",
+            "name": "20.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/20.jpg",
+            "size": {
+                "width": 2016,
+                "height": 2864
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cd36d51c0d204cfa724503081ed93ad0": {
+            "format": "jpg",
+            "id": "cd36d51c0d204cfa724503081ed93ad0",
+            "name": "21.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/21.jpg",
+            "size": {
+                "width": 2088,
+                "height": 2980
+            },
+            "state": 2,
+            "type": 1
+        },
+        "81dcdb5bb759665c9e35f0b4264428bb": {
+            "format": "jpg",
+            "id": "81dcdb5bb759665c9e35f0b4264428bb",
+            "name": "22.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/22.jpg",
+            "size": {
+                "width": 2192,
+                "height": 3240
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f48f7a83df6138427b7d819c16039589": {
+            "format": "jpg",
+            "id": "f48f7a83df6138427b7d819c16039589",
+            "name": "23.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/23.jpg",
+            "size": {
+                "width": 2096,
+                "height": 3080
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1b414e78e2967114de2d28753b20937b": {
+            "format": "jpg",
+            "id": "1b414e78e2967114de2d28753b20937b",
+            "name": "24.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/24.jpg",
+            "size": {
+                "width": 2056,
+                "height": 2964
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bb57367c8d5de8073acb14d3df27e596": {
+            "format": "jpg",
+            "id": "bb57367c8d5de8073acb14d3df27e596",
+            "name": "25.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/25.jpg",
+            "size": {
+                "width": 2088,
+                "height": 3016
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fbae20a0b784b9e2c6d1908a95d88ad6": {
+            "format": "jpg",
+            "id": "fbae20a0b784b9e2c6d1908a95d88ad6",
+            "name": "26.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/26.jpg",
+            "size": {
+                "width": 2116,
+                "height": 3036
+            },
+            "state": 2,
+            "type": 1
+        },
+        "56bab23a59caebc766b28bf7d5087f70": {
+            "format": "jpg",
+            "id": "56bab23a59caebc766b28bf7d5087f70",
+            "name": "27.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/27.jpg",
+            "size": {
+                "width": 2020,
+                "height": 2864
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ccaf72e73022c08e05c42b6b1c2e16dc": {
+            "format": "jpg",
+            "id": "ccaf72e73022c08e05c42b6b1c2e16dc",
+            "name": "28.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/28.jpg",
+            "size": {
+                "width": 1992,
+                "height": 2824
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c093cc38246db84ef9cbaf19a4a04a56": {
+            "format": "jpg",
+            "id": "c093cc38246db84ef9cbaf19a4a04a56",
+            "name": "29.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/29.jpg",
+            "size": {
+                "width": 2060,
+                "height": 3000
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2ab767ab50166ba6ee7089e5f2b9bdb3": {
+            "format": "jpg",
+            "id": "2ab767ab50166ba6ee7089e5f2b9bdb3",
+            "name": "30.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/30.jpg",
+            "size": {
+                "width": 2080,
+                "height": 3016
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c4f0e2019972ff53f0f75aac3c6d9beb": {
+            "format": "jpg",
+            "id": "c4f0e2019972ff53f0f75aac3c6d9beb",
+            "name": "31.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/31.jpg",
+            "size": {
+                "width": 2068,
+                "height": 2904
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7ac2b78204760339d43b678e4c360ae8": {
+            "format": "jpg",
+            "id": "7ac2b78204760339d43b678e4c360ae8",
+            "name": "32.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/32.jpg",
+            "size": {
+                "width": 2060,
+                "height": 2796
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e92f244361c16de0a6244ddd9d634719": {
+            "format": "jpg",
+            "id": "e92f244361c16de0a6244ddd9d634719",
+            "name": "33.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/33.jpg",
+            "size": {
+                "width": 2176,
+                "height": 2964
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6670e858c9569c5ab7226777d811f773": {
+            "format": "jpg",
+            "id": "6670e858c9569c5ab7226777d811f773",
+            "name": "34.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/34.jpg",
+            "size": {
+                "width": 1928,
+                "height": 2744
+            },
+            "state": 2,
+            "type": 1
+        },
+        "524c3d0c1f7f6558746db053cd6659d8": {
+            "format": "jpg",
+            "id": "524c3d0c1f7f6558746db053cd6659d8",
+            "name": "35.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/35.jpg",
+            "size": {
+                "width": 2116,
+                "height": 2960
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f5bea93fc57ba31cc5ff29e8f3e7d1cc": {
+            "format": "jpg",
+            "id": "f5bea93fc57ba31cc5ff29e8f3e7d1cc",
+            "name": "36.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/36.jpg",
+            "size": {
+                "width": 2124,
+                "height": 2944
+            },
+            "state": 2,
+            "type": 1
+        },
+        "49f86da8d6798c870278a3e70e05dc2e": {
+            "format": "jpg",
+            "id": "49f86da8d6798c870278a3e70e05dc2e",
+            "name": "37.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/37.jpg",
+            "size": {
+                "width": 2344,
+                "height": 3500
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3e0dbfcb1a64744e83651b5bf92f6c13": {
+            "format": "jpg",
+            "id": "3e0dbfcb1a64744e83651b5bf92f6c13",
+            "name": "39.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/39.jpg",
+            "size": {
+                "width": 2164,
+                "height": 3056
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7ef12d4756e079433aa0c166cd819067": {
+            "format": "jpg",
+            "id": "7ef12d4756e079433aa0c166cd819067",
+            "name": "4.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/4.jpg",
+            "size": {
+                "width": 1976,
+                "height": 2820
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d513fc16171a257d371372777e134206": {
+            "format": "jpg",
+            "id": "d513fc16171a257d371372777e134206",
+            "name": "40.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/40.jpg",
+            "size": {
+                "width": 2072,
+                "height": 2820
+            },
+            "state": 2,
+            "type": 1
+        },
+        "af440e60f60c9c7c0f8dd123a6b5978a": {
+            "format": "jpg",
+            "id": "af440e60f60c9c7c0f8dd123a6b5978a",
+            "name": "41.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/41.jpg",
+            "size": {
+                "width": 2272,
+                "height": 3176
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8540d51d3b0d4f0331a9d09d1cd47746": {
+            "format": "jpg",
+            "id": "8540d51d3b0d4f0331a9d09d1cd47746",
+            "name": "42.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/42.jpg",
+            "size": {
+                "width": 2316,
+                "height": 3228
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2a1b669f7f33ab9202ce7195c10f53ff": {
+            "format": "jpg",
+            "id": "2a1b669f7f33ab9202ce7195c10f53ff",
+            "name": "43.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/43.jpg",
+            "size": {
+                "width": 2160,
+                "height": 3052
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2c89a4a2731d0b6ac6252edd22cd2bc9": {
+            "format": "jpg",
+            "id": "2c89a4a2731d0b6ac6252edd22cd2bc9",
+            "name": "44.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/44.jpg",
+            "size": {
+                "width": 2072,
+                "height": 3008
+            },
+            "state": 2,
+            "type": 1
+        },
+        "04e6eec98704e0301b69c0d47fdd7bf5": {
+            "format": "jpg",
+            "id": "04e6eec98704e0301b69c0d47fdd7bf5",
+            "name": "45.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/45.jpg",
+            "size": {
+                "width": 2152,
+                "height": 3028
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b69d960db6a8ab9ee18d530a7d28b3ba": {
+            "format": "jpg",
+            "id": "b69d960db6a8ab9ee18d530a7d28b3ba",
+            "name": "46.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/46.jpg",
+            "size": {
+                "width": 2124,
+                "height": 3144
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a5e7c4597443a2521bd7b91f7bea486b": {
+            "format": "jpg",
+            "id": "a5e7c4597443a2521bd7b91f7bea486b",
+            "name": "47.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/47.jpg",
+            "size": {
+                "width": 2084,
+                "height": 3052
+            },
+            "state": 2,
+            "type": 1
+        },
+        "920fac4944304e577554330852147fd1": {
+            "format": "jpg",
+            "id": "920fac4944304e577554330852147fd1",
+            "name": "48.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/48.jpg",
+            "size": {
+                "width": 2164,
+                "height": 3112
+            },
+            "state": 2,
+            "type": 1
+        },
+        "53280d63c3b8cdb9ede8ba65f68425dd": {
+            "format": "jpg",
+            "id": "53280d63c3b8cdb9ede8ba65f68425dd",
+            "name": "49.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/49.jpg",
+            "size": {
+                "width": 2068,
+                "height": 2984
+            },
+            "state": 2,
+            "type": 1
+        },
+        "19099baf4fa46e9840dd219cdcf6331c": {
+            "format": "jpg",
+            "id": "19099baf4fa46e9840dd219cdcf6331c",
+            "name": "5.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/5.jpg",
+            "size": {
+                "width": 1912,
+                "height": 2748
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f67446e86b9fb958215820a0f6ee2c3f": {
+            "format": "jpg",
+            "id": "f67446e86b9fb958215820a0f6ee2c3f",
+            "name": "50.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/50.jpg",
+            "size": {
+                "width": 2136,
+                "height": 2988
+            },
+            "state": 2,
+            "type": 1
+        },
+        "34500ce7695be55fc2c4b487e088710f": {
+            "format": "jpg",
+            "id": "34500ce7695be55fc2c4b487e088710f",
+            "name": "51.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/51.jpg",
+            "size": {
+                "width": 1900,
+                "height": 2664
+            },
+            "state": 2,
+            "type": 1
+        },
+        "21efbff86b667bbc234df519e0239fba": {
+            "format": "jpg",
+            "id": "21efbff86b667bbc234df519e0239fba",
+            "name": "6.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/6.jpg",
+            "size": {
+                "width": 1848,
+                "height": 2644
+            },
+            "state": 2,
+            "type": 1
+        },
+        "24fb60135d555f94bd73b7716f07c57c": {
+            "format": "jpg",
+            "id": "24fb60135d555f94bd73b7716f07c57c",
+            "name": "7.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/7.jpg",
+            "size": {
+                "width": 2108,
+                "height": 3120
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5d1b044c9ff2d91129cb77005d5ca9f1": {
+            "format": "jpg",
+            "id": "5d1b044c9ff2d91129cb77005d5ca9f1",
+            "name": "8.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/8.jpg",
+            "size": {
+                "width": 2176,
+                "height": 3172
+            },
+            "state": 2,
+            "type": 1
+        },
+        "771fb3dcbb7178f736f90f97be4a701b": {
+            "format": "jpg",
+            "id": "771fb3dcbb7178f736f90f97be4a701b",
+            "name": "9.jpg",
+            "path": "file:/home/srijansharma/Desktop/data/ICICI%20Form/9.jpg",
+            "size": {
+                "width": 2064,
+                "height": 3016
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}

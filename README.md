@@ -1,1 +1,2 @@
-# English-Hindi-Digital-Document-Translater
+# digital-document-text-extraction
+Extracting Text from Digital Documents
