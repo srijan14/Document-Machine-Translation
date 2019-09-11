@@ -27,7 +27,7 @@ Below is a sample curl request to test the results:
 ``` ```
 
 
-###2 PDF to Converted Text
+### 2 PDF to Converted Text
 
 1. Installing Dependencies
 
