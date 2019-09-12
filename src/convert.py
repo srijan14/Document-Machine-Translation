@@ -26,8 +26,7 @@ class Convert:
             os.mkdir(self.image_out_path)
 
         PDF_file = self.filename
-        pdf2jpg.convert_pdf2jpg(PDF_file, self.image_out_path,dpi=300,
-                                pages="0")
+        pdf2jpg.convert_pdf2jpg(PDF_file, self.image_out_path,dpi=300)
         print("Successfully saved images for each page for {}".format(self.image_out_path))
 
         out_folder_name = os.path.basename(self.filename) + "_dir"
