@@ -4,12 +4,8 @@ import pytesseract
 import shutil
 from pdf2jpg import pdf2jpg
 import os
-import urllib
 import requests
 import json
-import time
-import nltk
-from fpdf import FPDF
 import uuid
 import re
 
@@ -45,7 +41,8 @@ class Convert:
 
         corpus = " ".join(english_text)
         corpus = re.sub(r'\n+', '\n', corpus).strip()
-        self.english = corpus.split("\n")
+        corpus = corpus.split(".")
+        self.english = list(map(str.strip, corpus))
         print("English Text Extracted is : {}".format(self.english))
         shutil.rmtree(self.image_out_path)
 

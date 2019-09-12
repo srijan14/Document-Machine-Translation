@@ -36,7 +36,7 @@ component server:
     ```
     Tools like postman etc can also be used to test the api.
 
-### 2. **PDF to Converted Text**
+### 2. **PDF to Converted(Hindi) Text**
 
 1. **Installing Dependencies**
     ```bash
