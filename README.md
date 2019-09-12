@@ -58,3 +58,7 @@ component server:
     **Note: Having too many pages in the pdf might take a bit of time for
 the API to return the results. On successfull processing, a text file
 with the converted hindi text will be generated.**
+
+## Future Work
+1. Updating Web UI to allow the user to translate an image format documents, and also the functionality to allow the conversion of a particular page of pdf.
+2. Support for Other Languages.
