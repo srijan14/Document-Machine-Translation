@@ -1,6 +1,12 @@
 # English-Hindi-Digital-Document-Translater
 This repository contains the code to convert English Digital Documents(pdf) into Hindi. 
 
+## Requirements
+
+1. Python 3.7.3
+2. pip 19.0.3
+3. OS : ubuntu18.**
+
 Below are the two components present :
 
 ### 1. **Machine-Translation**
@@ -21,7 +27,7 @@ component server:
    
 3. **Start Server**(Will start a server at default port **5000**)
     ```bash
-    python server.py
+    bash run_server.sh
     ```
     Below is a sample curl request to test the results:
     
@@ -35,7 +41,13 @@ component server:
 1. **Installing Dependencies**
     ```bash
     pip install -r requirements.txt
+    sudo apt-get install tesseract-ocr
+    sudo apt install libtesseract-dev 
+    sudo apt-get install libleptonica-dev
     ```
+    Please feel free to refer to
+    [tesseract installation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)
+    page for any help in installation.
 2. **Start Server** (will start a server on port 5001)
     ```bash
     export PYTHONPATH=$PWD && python src/app.py
