@@ -45,7 +45,6 @@ class Convert:
 
         corpus = " ".join(english_text)
         corpus = re.sub(r'\n+', '\n', corpus).strip()
-        # self.english = nltk.sent_tokenize(corpus)
         self.english = corpus.split("\n")
         print("English Text Extracted is : {}".format(self.english))
         shutil.rmtree(self.image_out_path)
