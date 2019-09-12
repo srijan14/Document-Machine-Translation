@@ -1,0 +1,16 @@
+{
+    "models_root": "./available_models",
+    "models": [
+        {
+            "id": 100,
+            "model":"model.pt",
+            "timeout": 600,
+            "on_timeout": "to_cpu",
+            "load": true,
+            "opt": {
+                "batch_size": 1,
+                "beam_size": 5
+            }
+        }
+    ]
+}
