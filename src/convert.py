@@ -32,8 +32,7 @@ class Convert:
             os.mkdir(self.image_out_path)
 
         PDF_file = self.filename
-        pdf2jpg.convert_pdf2jpg(PDF_file, self.image_out_path,dpi=300,
-                                pages="0")
+        pdf2jpg.convert_pdf2jpg(PDF_file, self.image_out_path,dpi=300)
         print("Successfully saved images for each page for {}".format(self.image_out_path))
 
         out_folder_name = os.path.basename(self.filename) + "_dir"
@@ -48,7 +47,7 @@ class Convert:
         corpus = " ".join(english_text)
         corpus = re.sub(r'\n+', '\n', corpus).strip()
         # self.english = nltk.sent_tokenize(corpus)
-        self.english = corpus.split("\n")
+        self.english = corpus.split(".")
         print("English Text Extracted is : {}".format(self.english))
         shutil.rmtree(self.image_out_path)
 
