@@ -3,7 +3,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+pdf_test_data/
 # C extensions
 *.so
 
