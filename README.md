@@ -4,8 +4,8 @@ This repository contains the code to convert English Digital Documents(pdf) into
 Below are the two components present :
 
 ### 1. Machine-Translation
-We have used [opennmt](https://github.com/OpenNMT/OpenNMT-py) to train and serve the model on own custom dataset. Follow below instructions
-to start this component server:
+We have used [opennmt](https://github.com/OpenNMT/OpenNMT-py) to train and serve the model.Follow below instructions
+to start this component:
 
 1. Installing Dependencies
 ```bash
@@ -27,7 +27,7 @@ Below is a sample curl request to test the results:
 ```bash
 curl --header "Content-Type: application/json"   --request POST   --data '[{"id":100,"src":"You should refrain from doing this."}]' http://localhost:5000/translator/translate
 ```
-Tools lik postman etc can also be used to test the api. 
+Tools like postman etc can also be used to test the api. 
 
 
 ### 2 PDF to Converted Text
