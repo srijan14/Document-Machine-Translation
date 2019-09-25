@@ -22,7 +22,7 @@ component server:
     ```
 2. **Model Download**: 
 
-    Download model from [here](https://drive.google.com/open?id=1IT-rxl4oUog036sGdvoRAsLebGlhOyRo) and copy inside the
+    Download model from [here](https://github.com/srijan14/Machine-Translation-Models/tree/master/eng-hin/v1) and copy inside the
     ./OpenNMT-py/available_models folder
    
 3. **Start Server**(Will start a server at default port **5000**)
