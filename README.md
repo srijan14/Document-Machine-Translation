@@ -53,7 +53,7 @@ component server:
     python src/app.py
     ```
 3. Go to http://localhost:5001/home
-    <center style="padding: 40px"><img width="10%" height="20%" src="./static/images/server_demo.png" /></center>
+    <center style="padding: 40px"><img width="100%" height="50%" src="./static/images/server_demo.png" /></center>
 
     **Note: Having too many pages in the pdf might take a bit of time for
 the API to return the results. On successfull processing, a text file
