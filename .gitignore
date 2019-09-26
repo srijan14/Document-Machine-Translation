@@ -1,11 +1,13 @@
+.idea/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
+pdf_test_data/
 # C extensions
 *.so
-
+*.pdf
+*.txt
 # Distribution / packaging
 .Python
 build/
