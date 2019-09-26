@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 from flask import Flask, render_template, jsonify, redirect, url_for, \
     request, send_from_directory, send_file
-from src.convert import Convert
+from convert import Convert
 
 template_dir = os.path.abspath(os.path.join(os.getcwd(), "./templates"))
 app = Flask(__name__,template_folder=template_dir )
