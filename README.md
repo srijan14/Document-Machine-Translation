@@ -41,9 +41,7 @@ component server:
 1. **Installing Dependencies**
     ```bash
     pip install -r requirements.txt
-    sudo apt-get install tesseract-ocr
-    sudo apt install libtesseract-dev 
-    sudo apt-get install libleptonica-dev
+    sudo apt-get install tesseract-ocr libtesseract-dev  libleptonica-dev
     ```
     Please feel free to refer to
     [tesseract installation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)

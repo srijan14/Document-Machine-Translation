@@ -4,6 +4,7 @@ import pytesseract
 import shutil
 from pdf2jpg import pdf2jpg
 import os
+import argparse
 import requests
 import json
 import uuid
@@ -64,3 +65,17 @@ class Convert:
         f.close()
 
         return self.outfilename
+
+
+if __name__=="__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file",required=True,help="Please provide the input file")
+    args = parser.parse_args()
+    filename = os.path.abspath(os.path.join(os.getcwd(),args.file))
+    if filename is None or not os.path.exists(filename):
+        print("Invalid file path provided")
+
+    converter = Convert(filename)
+    converter.extract_text()
+    converter.convert_text()
+    print("Predicted Hindi Text is :\n {}".format(converter.hindi))
