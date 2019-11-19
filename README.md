@@ -3,9 +3,10 @@ This repository contains the code to convert English Digital Documents(pdf) into
 
 ## Requirements
 
-1. Python 3.7
-2. pip 19.0.3
-3. OS : ubuntu18.** , ununtu16.**
+    1. Python 3.7
+    2. pip 19.0.3
+    3. OS : ubuntu18.** , ununtu16.**
+
 
 1. **Installing Dependencies**
     ```bash
