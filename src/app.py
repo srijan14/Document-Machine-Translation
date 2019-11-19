@@ -22,7 +22,10 @@ def index():
 def upload():
     if request.method == 'POST':
         file = request.files['file']
-        if file and allowed_file(file.filename):
+        if not allowed_file(file.filename):
+            return  {"status":400, "msg": "provided file type not supported. Expected pdf document as input"}
+
+        if file and file.filename.endswith("pdf"):
             now = datetime.now()
             filename = os.path.join(app.config['UPLOAD_FOLDER'], "%s.%s" % (now.strftime("%Y-%m-%d-%H-%M-%S-%f"), file.filename.rsplit('.', 1)[1]))
             file.save(filename)
@@ -32,8 +35,7 @@ def upload():
             return_file = converter.create_pdf()
             return send_from_directory(directory=os.path.dirname(return_file),
                                        filename=os.path.basename(return_file),as_attachment=True)
-        else:
-            return {"status":400, "msg": "provided file type not supported. Expected pdf document as input"}
+
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
