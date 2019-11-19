@@ -7,8 +7,6 @@ This repository contains the code to convert English Digital Documents(pdf) into
 2. pip 19.0.3
 3. OS : ubuntu18.** , ununtu16.**
 
-Below are the two components present :
-
 1. **Installing Dependencies**
     ```bash
     pip install -r requirements.txt
