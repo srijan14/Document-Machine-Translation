@@ -47,7 +47,7 @@ the API to return the results. On successfull processing, a text file
 with the converted hindi text will be generated.**
 
 ## Acknowlegements
-1. [text-translator](https://pypi.org/project/text-translator/)
+1. [text-translator](https://github.com/srijan14/text-translator)
 
 ## Future Work
 1. Updating Web UI to allow the user to translate an image format documents, and also the functionality to allow the conversion of a particular page of pdf.
