@@ -5,21 +5,23 @@ import shutil
 import os
 from pdf2image import pdf2image
 from translator import Translator
-import requests
-import json
+from constants import MODEL_PATH
 import uuid
 import re
 
+
 class Convert:
-    MODEL_PATH = os.path.abspath(os.path.join(os.getcwd(),"./model/model.pt"))
-    def __init__(self,filename):
+
+    MODEL_PATH = os.path.abspath(os.path.join(os.getcwd(), MODEL_PATH))
+
+    def __init__(self, filename):
+
         self.filename = filename
         self.translator = Translator()
         self.translator.load_model(self.MODEL_PATH)
         self.image_out_path = os.path.join(os.getcwd(), "./data/images/")
         self.outfilename = os.path.join(os.path.dirname(self.filename),
-                                                        "output",
-                                        str(uuid.uuid1()) + "-hindi.txt")
+                                        "output" + str(uuid.uuid1()) + ".txt")
         self.english = list()
         self.hindi = list()
 
@@ -49,7 +51,6 @@ class Convert:
                                                        str(index) + ".jpg"
                                                        )),'JPEG')
                 index = index + 1
-
 
         print("Successfully saved images for each page for {}".format(self.image_out_path))
 
@@ -88,9 +89,3 @@ class Convert:
         f.close()
 
         return self.outfilename
-
-if __name__=="__main__":
-    c = Convert("/home/srijan/Desktop/self/github/English-Hindi/English-Hindi"
-                "-Digital-Document-Translater/pdf_test_data/pdf1.pdf")
-    c.extract_text()
-    c.convert_text()

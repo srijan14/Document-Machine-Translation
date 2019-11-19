@@ -18,14 +18,21 @@ ALLOWED_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']
 def index():
     return render_template("index.html")
 
+
 @app.route('/upload', methods=['POST'])
 def upload():
+
     if request.method == 'POST':
+
         file = request.files['file']
+
         if not allowed_file(file.filename):
-            return  {"status":400, "msg": "provided file type not supported. Expected pdf document as input"}
+
+            return {"status":400, "msg":  "provided file type not supported. "
+                                          "Expected pdf document as input"}
 
         if file and file.filename.endswith("pdf"):
+
             now = datetime.now()
             filename = os.path.join(app.config['UPLOAD_FOLDER'], "%s.%s" % (now.strftime("%Y-%m-%d-%H-%M-%S-%f"), file.filename.rsplit('.', 1)[1]))
             file.save(filename)
@@ -33,8 +40,10 @@ def upload():
             converter.extract_text()
             converter.convert_text()
             return_file = converter.create_pdf()
+
             return send_from_directory(directory=os.path.dirname(return_file),
-                                       filename=os.path.basename(return_file),as_attachment=True)
+                                       filename=os.path.basename(return_file),
+                                       as_attachment=True)
 
 
 def allowed_file(filename):
@@ -42,4 +51,4 @@ def allowed_file(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=True,host="0.0.0.0",port=5001)
+    app.run(debug=True, host="0.0.0.0", port=5001)
