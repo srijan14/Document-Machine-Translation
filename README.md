@@ -23,7 +23,8 @@ This repository contains the code to convert English Digital Documents(pdf) into
 
     Download model from
     [here](https://github.com/srijan14/Machine-Translation-Models/tree/master/eng-hin/v1)
-    and copy inside the **./model** folder
+    and copy inside the **./model** folder . Update the model path in src/constants.py file, 
+    if having some different model name.
     
 3. **Start Server** (will start a server on port 5001)
     ```bash
