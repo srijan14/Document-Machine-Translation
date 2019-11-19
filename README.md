@@ -5,38 +5,9 @@ This repository contains the code to convert English Digital Documents(pdf) into
 
 1. Python 3.7
 2. pip 19.0.3
-3. OS : ubuntu18.**
+3. OS : ubuntu18.** , ununtu16.**
 
 Below are the two components present :
-
-### 1. **Machine-Translation**
-
-We have used [opennmt](https://github.com/OpenNMT/OpenNMT-py) to train
-and serve the model trained on our own custom dataset along with this
-[open source](http://www.cfilt.iitb.ac.in/iitb_parallel/) dataset. Follow below instructions to start this
-component server:
-
-1. **Installing Dependencies**
-    ```bash
-    cd OpenNMT-py && pip install -r requirements.txt --no-cache-dir
-    ```
-2. **Model Download**: 
-
-    Download model from [here](https://github.com/srijan14/Machine-Translation-Models/tree/master/eng-hin/v1) and copy inside the
-    ./OpenNMT-py/available_models folder
-   
-3. **Start Server**(Will start a server at default port **5000**)
-    ```bash
-    bash run_server.sh
-    ```
-    Below is a sample curl request to test the results:
-    
-    ```bash
-     curl --header "Content-Type: application/json"   --request POST   --data '[{"id":100,"src":"You should refrain from doing this."}]' http://localhost:5000/translator/translate
-    ```
-    Tools like postman etc can also be used to test the api.
-
-### 2. **PDF to Converted(Hindi) Text**
 
 1. **Installing Dependencies**
     ```bash
@@ -47,28 +18,40 @@ component server:
     ```
     Please feel free to refer to
     [tesseract installation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)
-    page for any help in installation.
-2. **Start Server** (will start a server on port 5001)
+    page for any help in installation
+    .
+2. **Model Download**: 
+
+    Download model from
+    [here](https://github.com/srijan14/Machine-Translation-Models/tree/master/eng-hin/v1)
+    and copy inside the **./model** folder
+    
+3. **Start Server** (will start a server on port 5001)
     ```bash
     python src/app.py
     ```
-3. Go to http://localhost:5001/home
+4. Go to http://localhost:5001/home
     
     ![ http://localhost:5001/home](./static/images/server_demo.png)
 
 
-4. Example Run 
+5. Example Run 
     
     a. English - Hindi 
     
     Input Upload(English)            |  Hindi Output
     :-------------------------:|:-------------------------:
-    ![](./static/images/english.png)  |  ![](./static/images/hindi.png)
+    ![input doc](./static/images/english.png)  |  ![translated doc](./static/images/hindi.png)
 
 **Note: Having too many pages in the pdf might take a bit of time for
 the API to return the results. On successfull processing, a text file
 with the converted hindi text will be generated.**
 
+## Acknowlegements
+1. [text-translator](https://pypi.org/project/text-translator/)
+
 ## Future Work
 1. Updating Web UI to allow the user to translate an image format documents, and also the functionality to allow the conversion of a particular page of pdf.
 2. Support for Other Languages.
+
+
