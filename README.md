@@ -14,6 +14,7 @@ This repository contains the code to convert English Digital Documents(pdf) into
     sudo apt-get install tesseract-ocr
     sudo apt install libtesseract-dev 
     sudo apt-get install libleptonica-dev
+    sudo apt-get install -y poppler-utils
     ```
     Please feel free to refer to
     [tesseract installation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)

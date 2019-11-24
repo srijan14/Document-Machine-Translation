@@ -6,6 +6,7 @@ import os
 from pdf2image import pdf2image
 from translator import Translator
 from constants import MODEL_PATH
+from textblob import TextBlob
 import uuid
 import re
 
@@ -66,8 +67,9 @@ class Convert:
 
         corpus = " ".join(english_text)
         corpus = re.sub(r'\n+', '\n', corpus).strip()
-        corpus = corpus.split(".")
-        self.english = list(map(str.strip, corpus))
+        corpus = TextBlob(corpus)
+        for sentence in corpus.sentences:
+            self.english.append(sentence.string.replace("\n"," "))
         print("English Text Extracted is : {}".format(self.english))
         shutil.rmtree(self.image_out_path)
 
