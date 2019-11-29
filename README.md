@@ -15,6 +15,7 @@ This repository contains the code to convert English Digital Documents(pdf) into
     sudo apt install libtesseract-dev 
     sudo apt-get install libleptonica-dev
     sudo apt-get install -y poppler-utils
+    python -m textblob.download_corpora
     ```
     Please feel free to refer to
     [tesseract installation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)
