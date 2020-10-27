@@ -4,7 +4,7 @@ cffi==1.13.2
 chardet==3.0.4
 Click==7.0
 ConfigArgParse==0.15.1
-cryptography==2.8
+cryptography==3.2
 docutils==0.15.2
 entrypoints==0.3
 Flask==1.1.1
