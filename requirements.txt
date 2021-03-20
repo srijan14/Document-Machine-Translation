@@ -13,7 +13,7 @@ img2pdf==0.3.3
 importlib-metadata==0.23
 itsdangerous==1.1.0
 jeepney==0.4.1
-Jinja2==2.10.1
+Jinja2==2.11.3
 keyring==19.2.0
 MarkupSafe==1.1.1
 more-itertools==7.2.0
